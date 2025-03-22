@@ -1,0 +1,74 @@
+nohup: ignoring input
+Sample Formatted Sequence:
+P Q I T L W Q R P L V T I K I G G Q L K E A L L D T G A D N T V L E E M N L P G R W K P K M I G G I G G F I K V G Q Y D Q I L I E I C G H K A I G T V L V G P T P V N I I G R D L L T Q I G C T L N F
+torch.Size([1, 128])
+Using GPU
+
+Fold 1 / 5
+Epoch 1 Loss: 0.5489
+Epoch 2 Loss: 0.3611
+Epoch 3 Loss: 0.3054
+Epoch 4 Loss: 0.2787
+Epoch 5 Loss: 0.2573
+Epoch 6 Loss: 0.2427
+Epoch 7 Loss: 0.2242
+Epoch 8 Loss: 0.2090
+Epoch 9 Loss: 0.1936
+Epoch 10 Loss: 0.1843
+Fold 1 Exact Match Accuracy: 0.5825, Macro F1: 0.8146
+
+Fold 2 / 5
+Epoch 1 Loss: 0.5432
+Epoch 2 Loss: 0.3567
+Epoch 3 Loss: 0.3020
+Epoch 4 Loss: 0.2762
+Epoch 5 Loss: 0.2638
+Epoch 6 Loss: 0.2557
+Epoch 7 Loss: 0.2397
+Epoch 8 Loss: 0.2304
+Epoch 9 Loss: 0.2200
+Epoch 10 Loss: 0.2084
+Fold 2 Exact Match Accuracy: 0.5115, Macro F1: 0.7942
+
+Fold 3 / 5
+Epoch 1 Loss: 0.5159
+Epoch 2 Loss: 0.3341
+Epoch 3 Loss: 0.2856
+Epoch 4 Loss: 0.2665
+Epoch 5 Loss: 0.2453
+Epoch 6 Loss: 0.2242
+Epoch 7 Loss: 0.2095
+Epoch 8 Loss: 0.1916
+Epoch 9 Loss: 0.1763
+Epoch 10 Loss: 0.1669
+Fold 3 Exact Match Accuracy: 0.4885, Macro F1: 0.7988
+
+Fold 4 / 5
+Epoch 1 Loss: 0.5400
+Epoch 2 Loss: 0.3511
+Epoch 3 Loss: 0.3007
+Epoch 4 Loss: 0.2727
+Epoch 5 Loss: 0.2549
+Epoch 6 Loss: 0.2326
+Epoch 7 Loss: 0.2157
+Epoch 8 Loss: 0.1986
+Epoch 9 Loss: 0.1870
+Epoch 10 Loss: 0.1800
+Fold 4 Exact Match Accuracy: 0.5073, Macro F1: 0.8042
+
+Fold 5 / 5
+Epoch 1 Loss: 0.5155
+Epoch 2 Loss: 0.3389
+Epoch 3 Loss: 0.2873
+Epoch 4 Loss: 0.2661
+Epoch 5 Loss: 0.2485
+Epoch 6 Loss: 0.2332
+Epoch 7 Loss: 0.2118
+Epoch 8 Loss: 0.1958
+Epoch 9 Loss: 0.1814
+Epoch 10 Loss: 0.1721
+Fold 5 Exact Match Accuracy: 0.5449, Macro F1: 0.8012
+
+Cross-validation Results:
+Average Exact Match Accuracy: 0.5269 ± 0.0332
+Average Macro F1 Score: 0.8026 ± 0.0069

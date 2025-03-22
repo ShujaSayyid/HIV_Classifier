@@ -1,0 +1,38 @@
+Sample Formatted Sequence:
+P Q I T L W Q R P L V T I K I G G Q L K E A L L D T G A D N T V L E E M N L P G R W K P K M I G G I G G F I K V G Q Y D Q I L I E I C G H K A I G T V L V G P T P V N I I G R D L L T Q I G C T L N F
+torch.Size([1, 128])
+Using GPU
+
+Fold 1 / 5
+Epoch 1 Loss: 0.5254
+Epoch 2 Loss: 0.3487
+Epoch 3 Loss: 0.2993
+Fold 1 Exact Match Accuracy: 0.5344, Macro F1: 0.7319
+
+Fold 2 / 5
+Epoch 1 Loss: 0.5121
+Epoch 2 Loss: 0.3414
+Epoch 3 Loss: 0.2892
+Fold 2 Exact Match Accuracy: 0.4593, Macro F1: 0.7462
+
+Fold 3 / 5
+Epoch 1 Loss: 0.5804
+Epoch 2 Loss: 0.4391
+Epoch 3 Loss: 0.3561
+Fold 3 Exact Match Accuracy: 0.4614, Macro F1: 0.7235
+
+Fold 4 / 5
+Epoch 1 Loss: 0.5627
+Epoch 2 Loss: 0.3771
+Epoch 3 Loss: 0.3188
+Fold 4 Exact Match Accuracy: 0.4635, Macro F1: 0.7477
+
+Fold 5 / 5
+Epoch 1 Loss: 0.5245
+Epoch 2 Loss: 0.3450
+Epoch 3 Loss: 0.2959
+Fold 5 Exact Match Accuracy: 0.4906, Macro F1: 0.7300
+
+Cross-validation Results:
+Average Exact Match Accuracy: 0.4818 ± 0.0287
+Average Macro F1 Score: 0.7358 ± 0.0095

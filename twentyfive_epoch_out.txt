@@ -1,0 +1,149 @@
+nohup: ignoring input
+Sample Formatted Sequence:
+P Q I T L W Q R P L V T I K I G G Q L K E A L L D T G A D N T V L E E M N L P G R W K P K M I G G I G G F I K V G Q Y D Q I L I E I C G H K A I G T V L V G P T P V N I I G R D L L T Q I G C T L N F
+torch.Size([1, 128])
+Using GPU
+
+Fold 1 / 5
+Epoch 1 Loss: 0.5148, Val Exact Match Acc: 0.4781, Val Macro F1: 0.7145
+Epoch 2 Loss: 0.3461, Val Exact Match Acc: 0.5010, Val Macro F1: 0.6742
+Epoch 3 Loss: 0.3095, Val Exact Match Acc: 0.5282, Val Macro F1: 0.7801
+Epoch 4 Loss: 0.2828, Val Exact Match Acc: 0.5365, Val Macro F1: 0.7946
+Epoch 5 Loss: 0.2652, Val Exact Match Acc: 0.5344, Val Macro F1: 0.8018
+Epoch 6 Loss: 0.2531, Val Exact Match Acc: 0.5282, Val Macro F1: 0.7828
+Epoch 7 Loss: 0.2452, Val Exact Match Acc: 0.5511, Val Macro F1: 0.8037
+Epoch 8 Loss: 0.2326, Val Exact Match Acc: 0.5532, Val Macro F1: 0.8200
+Epoch 9 Loss: 0.2146, Val Exact Match Acc: 0.5678, Val Macro F1: 0.8192
+Epoch 10 Loss: 0.2004, Val Exact Match Acc: 0.5532, Val Macro F1: 0.7822
+Epoch 11 Loss: 0.1821, Val Exact Match Acc: 0.5699, Val Macro F1: 0.8088
+Epoch 12 Loss: 0.1705, Val Exact Match Acc: 0.5658, Val Macro F1: 0.8133
+Epoch 13 Loss: 0.1577, Val Exact Match Acc: 0.5658, Val Macro F1: 0.8074
+Epoch 14 Loss: 0.1439, Val Exact Match Acc: 0.5616, Val Macro F1: 0.8132
+Epoch 15 Loss: 0.1334, Val Exact Match Acc: 0.5553, Val Macro F1: 0.8067
+Epoch 16 Loss: 0.1250, Val Exact Match Acc: 0.5616, Val Macro F1: 0.8124
+Epoch 17 Loss: 0.1166, Val Exact Match Acc: 0.5741, Val Macro F1: 0.8170
+Epoch 18 Loss: 0.1082, Val Exact Match Acc: 0.5720, Val Macro F1: 0.8138
+Epoch 19 Loss: 0.1013, Val Exact Match Acc: 0.5846, Val Macro F1: 0.8195
+Epoch 20 Loss: 0.0954, Val Exact Match Acc: 0.5887, Val Macro F1: 0.8187
+Epoch 21 Loss: 0.0899, Val Exact Match Acc: 0.5866, Val Macro F1: 0.8156
+Epoch 22 Loss: 0.0855, Val Exact Match Acc: 0.5866, Val Macro F1: 0.8181
+Epoch 23 Loss: 0.0817, Val Exact Match Acc: 0.5887, Val Macro F1: 0.8180
+Epoch 24 Loss: 0.0787, Val Exact Match Acc: 0.5950, Val Macro F1: 0.8186
+Epoch 25 Loss: 0.0776, Val Exact Match Acc: 0.5950, Val Macro F1: 0.8184
+Fold 1 Exact Match Accuracy: 0.5950, Macro F1: 0.8184
+
+Fold 2 / 5
+Epoch 1 Loss: 0.5143, Val Exact Match Acc: 0.4238, Val Macro F1: 0.6328
+Epoch 2 Loss: 0.3244, Val Exact Match Acc: 0.4635, Val Macro F1: 0.7414
+Epoch 3 Loss: 0.2787, Val Exact Match Acc: 0.4718, Val Macro F1: 0.7876
+Epoch 4 Loss: 0.2992, Val Exact Match Acc: 0.4217, Val Macro F1: 0.7798
+Epoch 5 Loss: 0.2672, Val Exact Match Acc: 0.4781, Val Macro F1: 0.7855
+Epoch 6 Loss: 0.2753, Val Exact Match Acc: 0.4948, Val Macro F1: 0.8007
+Epoch 7 Loss: 0.2542, Val Exact Match Acc: 0.4676, Val Macro F1: 0.7578
+Epoch 8 Loss: 0.2445, Val Exact Match Acc: 0.5073, Val Macro F1: 0.7904
+Epoch 9 Loss: 0.2303, Val Exact Match Acc: 0.4739, Val Macro F1: 0.7989
+Epoch 10 Loss: 0.2172, Val Exact Match Acc: 0.4739, Val Macro F1: 0.7915
+Epoch 11 Loss: 0.2041, Val Exact Match Acc: 0.4718, Val Macro F1: 0.7733
+Epoch 12 Loss: 0.1936, Val Exact Match Acc: 0.4927, Val Macro F1: 0.8209
+Epoch 13 Loss: 0.1758, Val Exact Match Acc: 0.4990, Val Macro F1: 0.7996
+Epoch 14 Loss: 0.1566, Val Exact Match Acc: 0.4760, Val Macro F1: 0.8080
+Epoch 15 Loss: 0.1422, Val Exact Match Acc: 0.4969, Val Macro F1: 0.8173
+Epoch 16 Loss: 0.1312, Val Exact Match Acc: 0.4906, Val Macro F1: 0.8075
+Epoch 17 Loss: 0.1208, Val Exact Match Acc: 0.5157, Val Macro F1: 0.8143
+Epoch 18 Loss: 0.1128, Val Exact Match Acc: 0.5052, Val Macro F1: 0.8058
+Epoch 19 Loss: 0.1046, Val Exact Match Acc: 0.4990, Val Macro F1: 0.8089
+Epoch 20 Loss: 0.0978, Val Exact Match Acc: 0.4843, Val Macro F1: 0.8002
+Epoch 21 Loss: 0.0918, Val Exact Match Acc: 0.4969, Val Macro F1: 0.8133
+Epoch 22 Loss: 0.0872, Val Exact Match Acc: 0.5010, Val Macro F1: 0.8123
+Epoch 23 Loss: 0.0833, Val Exact Match Acc: 0.4990, Val Macro F1: 0.8121
+Epoch 24 Loss: 0.0805, Val Exact Match Acc: 0.4948, Val Macro F1: 0.8102
+Epoch 25 Loss: 0.0793, Val Exact Match Acc: 0.4969, Val Macro F1: 0.8125
+Fold 2 Exact Match Accuracy: 0.4969, Macro F1: 0.8125
+
+Fold 3 / 5
+Epoch 1 Loss: 0.5096, Val Exact Match Acc: 0.4447, Val Macro F1: 0.6335
+Epoch 2 Loss: 0.3455, Val Exact Match Acc: 0.4405, Val Macro F1: 0.7069
+Epoch 3 Loss: 0.3223, Val Exact Match Acc: 0.4301, Val Macro F1: 0.7702
+Epoch 4 Loss: 0.2975, Val Exact Match Acc: 0.4635, Val Macro F1: 0.7513
+Epoch 5 Loss: 0.2797, Val Exact Match Acc: 0.4969, Val Macro F1: 0.7801
+Epoch 6 Loss: 0.2644, Val Exact Match Acc: 0.4676, Val Macro F1: 0.7548
+Epoch 7 Loss: 0.2500, Val Exact Match Acc: 0.4927, Val Macro F1: 0.8038
+Epoch 8 Loss: 0.2376, Val Exact Match Acc: 0.4927, Val Macro F1: 0.7818
+Epoch 9 Loss: 0.2241, Val Exact Match Acc: 0.4697, Val Macro F1: 0.7824
+Epoch 10 Loss: 0.2199, Val Exact Match Acc: 0.4676, Val Macro F1: 0.7583
+Epoch 11 Loss: 0.2072, Val Exact Match Acc: 0.5157, Val Macro F1: 0.8105
+Epoch 12 Loss: 0.1974, Val Exact Match Acc: 0.5094, Val Macro F1: 0.7958
+Epoch 13 Loss: 0.1829, Val Exact Match Acc: 0.4969, Val Macro F1: 0.7823
+Epoch 14 Loss: 0.1692, Val Exact Match Acc: 0.5010, Val Macro F1: 0.8034
+Epoch 15 Loss: 0.1596, Val Exact Match Acc: 0.5136, Val Macro F1: 0.7891
+Epoch 16 Loss: 0.1470, Val Exact Match Acc: 0.5219, Val Macro F1: 0.7998
+Epoch 17 Loss: 0.1378, Val Exact Match Acc: 0.5282, Val Macro F1: 0.7969
+Epoch 18 Loss: 0.1273, Val Exact Match Acc: 0.5198, Val Macro F1: 0.8001
+Epoch 19 Loss: 0.1204, Val Exact Match Acc: 0.5177, Val Macro F1: 0.7924
+Epoch 20 Loss: 0.1135, Val Exact Match Acc: 0.5261, Val Macro F1: 0.8084
+Epoch 21 Loss: 0.1062, Val Exact Match Acc: 0.5240, Val Macro F1: 0.7973
+Epoch 22 Loss: 0.1001, Val Exact Match Acc: 0.5198, Val Macro F1: 0.8006
+Epoch 23 Loss: 0.0944, Val Exact Match Acc: 0.5282, Val Macro F1: 0.8037
+Epoch 24 Loss: 0.0907, Val Exact Match Acc: 0.5240, Val Macro F1: 0.8003
+Epoch 25 Loss: 0.0886, Val Exact Match Acc: 0.5303, Val Macro F1: 0.8024
+Fold 3 Exact Match Accuracy: 0.5303, Macro F1: 0.8024
+
+Fold 4 / 5
+Epoch 1 Loss: 0.5479, Val Exact Match Acc: 0.4196, Val Macro F1: 0.6127
+Epoch 2 Loss: 0.3617, Val Exact Match Acc: 0.4676, Val Macro F1: 0.7099
+Epoch 3 Loss: 0.3364, Val Exact Match Acc: 0.4259, Val Macro F1: 0.6406
+Epoch 4 Loss: 0.3077, Val Exact Match Acc: 0.4363, Val Macro F1: 0.6700
+Epoch 5 Loss: 0.2886, Val Exact Match Acc: 0.4906, Val Macro F1: 0.7775
+Epoch 6 Loss: 0.2770, Val Exact Match Acc: 0.4050, Val Macro F1: 0.6992
+Epoch 7 Loss: 0.3034, Val Exact Match Acc: 0.4676, Val Macro F1: 0.7661
+Epoch 8 Loss: 0.2682, Val Exact Match Acc: 0.4948, Val Macro F1: 0.8071
+Epoch 9 Loss: 0.2554, Val Exact Match Acc: 0.4656, Val Macro F1: 0.7544
+Epoch 10 Loss: 0.2487, Val Exact Match Acc: 0.4823, Val Macro F1: 0.7824
+Epoch 11 Loss: 0.2327, Val Exact Match Acc: 0.4843, Val Macro F1: 0.7811
+Epoch 12 Loss: 0.2252, Val Exact Match Acc: 0.4697, Val Macro F1: 0.7156
+Epoch 13 Loss: 0.2166, Val Exact Match Acc: 0.5073, Val Macro F1: 0.8168
+Epoch 14 Loss: 0.2082, Val Exact Match Acc: 0.4843, Val Macro F1: 0.7896
+Epoch 15 Loss: 0.1961, Val Exact Match Acc: 0.4948, Val Macro F1: 0.8039
+Epoch 16 Loss: 0.1841, Val Exact Match Acc: 0.5115, Val Macro F1: 0.8002
+Epoch 17 Loss: 0.1729, Val Exact Match Acc: 0.5052, Val Macro F1: 0.8031
+Epoch 18 Loss: 0.1604, Val Exact Match Acc: 0.5094, Val Macro F1: 0.8115
+Epoch 19 Loss: 0.1530, Val Exact Match Acc: 0.5031, Val Macro F1: 0.8022
+Epoch 20 Loss: 0.1430, Val Exact Match Acc: 0.5198, Val Macro F1: 0.8075
+Epoch 21 Loss: 0.1320, Val Exact Match Acc: 0.5240, Val Macro F1: 0.8097
+Epoch 22 Loss: 0.1238, Val Exact Match Acc: 0.5177, Val Macro F1: 0.8110
+Epoch 23 Loss: 0.1169, Val Exact Match Acc: 0.5198, Val Macro F1: 0.8130
+Epoch 24 Loss: 0.1114, Val Exact Match Acc: 0.5261, Val Macro F1: 0.8112
+Epoch 25 Loss: 0.1078, Val Exact Match Acc: 0.5219, Val Macro F1: 0.8116
+Fold 4 Exact Match Accuracy: 0.5219, Macro F1: 0.8116
+
+Fold 5 / 5
+Epoch 1 Loss: 0.5289, Val Exact Match Acc: 0.4676, Val Macro F1: 0.6684
+Epoch 2 Loss: 0.3396, Val Exact Match Acc: 0.4656, Val Macro F1: 0.7023
+Epoch 3 Loss: 0.3005, Val Exact Match Acc: 0.4635, Val Macro F1: 0.7194
+Epoch 4 Loss: 0.2780, Val Exact Match Acc: 0.4927, Val Macro F1: 0.7407
+Epoch 5 Loss: 0.2768, Val Exact Match Acc: 0.5198, Val Macro F1: 0.7654
+Epoch 6 Loss: 0.2665, Val Exact Match Acc: 0.5052, Val Macro F1: 0.7633
+Epoch 7 Loss: 0.2578, Val Exact Match Acc: 0.4823, Val Macro F1: 0.7732
+Epoch 8 Loss: 0.2494, Val Exact Match Acc: 0.5177, Val Macro F1: 0.7720
+Epoch 9 Loss: 0.2431, Val Exact Match Acc: 0.5177, Val Macro F1: 0.7564
+Epoch 10 Loss: 0.2312, Val Exact Match Acc: 0.5324, Val Macro F1: 0.8027
+Epoch 11 Loss: 0.2150, Val Exact Match Acc: 0.5261, Val Macro F1: 0.8117
+Epoch 12 Loss: 0.1988, Val Exact Match Acc: 0.5324, Val Macro F1: 0.7592
+Epoch 13 Loss: 0.1858, Val Exact Match Acc: 0.5365, Val Macro F1: 0.8010
+Epoch 14 Loss: 0.1756, Val Exact Match Acc: 0.5365, Val Macro F1: 0.7962
+Epoch 15 Loss: 0.1626, Val Exact Match Acc: 0.5658, Val Macro F1: 0.8150
+Epoch 16 Loss: 0.1472, Val Exact Match Acc: 0.5428, Val Macro F1: 0.8098
+Epoch 17 Loss: 0.1344, Val Exact Match Acc: 0.5449, Val Macro F1: 0.8047
+Epoch 18 Loss: 0.1234, Val Exact Match Acc: 0.5637, Val Macro F1: 0.8105
+Epoch 19 Loss: 0.1140, Val Exact Match Acc: 0.5616, Val Macro F1: 0.8102
+Epoch 20 Loss: 0.1066, Val Exact Match Acc: 0.5637, Val Macro F1: 0.8131
+Epoch 21 Loss: 0.0999, Val Exact Match Acc: 0.5741, Val Macro F1: 0.8219
+Epoch 22 Loss: 0.0936, Val Exact Match Acc: 0.5637, Val Macro F1: 0.8159
+Epoch 23 Loss: 0.0897, Val Exact Match Acc: 0.5637, Val Macro F1: 0.8131
+Epoch 24 Loss: 0.0867, Val Exact Match Acc: 0.5637, Val Macro F1: 0.8124
+Epoch 25 Loss: 0.0847, Val Exact Match Acc: 0.5699, Val Macro F1: 0.8157
+Fold 5 Exact Match Accuracy: 0.5699, Macro F1: 0.8157
+
+Cross-validation Results:
+Average Exact Match Accuracy: 0.5428 ± 0.0351
+Average Macro F1 Score: 0.8121 ± 0.0054

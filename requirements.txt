@@ -3,3 +3,4 @@ numpy
 transformers
 torch
 scikit-learn
+matplotlib

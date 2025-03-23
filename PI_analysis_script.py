@@ -185,6 +185,8 @@ dataset_labels = multi_labels
 # Set up 5-fold cross-validation
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
+all_fold_metrics = []
+
 fold_acc_list = []
 fold_f1_list = []
 
@@ -225,6 +227,8 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(dataset_sequences)):
     
     loss_fn = nn.BCEWithLogitsLoss()
     
+    fold_epoch_metrics = []
+    
     # Training loop for the current fold
     for epoch in range(num_epochs):
         model.train()
@@ -262,6 +266,8 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(dataset_sequences)):
         
         epoch_acc, epoch_f1 = compute_metrics(all_trues, all_preds, threshold=0.5)
         print(f"Epoch {epoch+1} Loss: {avg_loss:.4f}, Val Exact Match Acc: {epoch_acc:.4f}, Val Macro F1: {epoch_f1:.4f}")
+        
+        fold_epoch_metrics.append({"epoch": epoch+1, "loss": avg_loss, "val_acc": epoch_acc, "val_f1": epoch_f1})
     
     # Evaluation on validation set
     model.eval()
@@ -286,6 +292,8 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(dataset_sequences)):
     fold_acc_list.append(fold_acc)
     fold_f1_list.append(fold_f1)
     
+    all_fold_metrics.append({"epochs": fold_epoch_metrics, "fold_acc": fold_acc, "fold_f1": fold_f1})
+    
     # Clean up
     del model
     torch.cuda.empty_cache()
@@ -294,3 +302,22 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(dataset_sequences)):
 print("\nCross-validation Results:")
 print(f"Average Exact Match Accuracy: {np.mean(fold_acc_list):.4f} ± {np.std(fold_acc_list):.4f}")
 print(f"Average Macro F1 Score: {np.mean(fold_f1_list):.4f} ± {np.std(fold_f1_list):.4f}")
+
+# Write evaluation results to a file for future reference
+with open("evaluation_results.txt", "w") as f:
+    f.write("Evaluation Results for HIVMultiLabelClassifier\n")
+    f.write("=============================================\n\n")
+    f.write("Sample Formatted Sequence:\n")
+    f.write(df.loc[0, "FormattedSequence"] + "\n\n")
+    
+    for fold_idx, fold_data in enumerate(all_fold_metrics):
+        f.write(f"Fold {fold_idx+1}:\n")
+        for epoch_data in fold_data["epochs"]:
+            f.write(f"  Epoch {epoch_data['epoch']}: Loss: {epoch_data['loss']:.4f}, Val Exact Match Acc: {epoch_data['val_acc']:.4f}, Val Macro F1: {epoch_data['val_f1']:.4f}\n")
+        f.write(f"  Fold Summary: Exact Match Accuracy: {fold_data['fold_acc']:.4f}, Macro F1: {fold_data['fold_f1']:.4f}\n\n")
+    
+    f.write("Overall Cross-validation Results:\n")
+    f.write(f"Average Exact Match Accuracy: {np.mean(fold_acc_list):.4f} ± {np.std(fold_acc_list):.4f}\n")
+    f.write(f"Average Macro F1 Score: {np.mean(fold_f1_list):.4f} ± {np.std(fold_f1_list):.4f}\n")
+
+print("\nDetailed evaluation results have been saved to 'evaluation_results.txt'.")

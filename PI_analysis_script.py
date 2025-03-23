@@ -157,7 +157,7 @@ class ProteinBERTMultiLabelClassifier(nn.Module):
 # ================================
 
 # Training parameters
-num_epochs = 3
+num_epochs = 25
 batch_size = 16
 learning_rate = 2e-5
 max_length = 128  # Adjust as needed (should be >= number of tokens in formatted sequence)
@@ -168,6 +168,7 @@ if torch.cuda.is_available():
     device = torch.device("cuda")
     print("Using GPU")
 elif torch.backends.mps.is_available():
+    #This for macs with apple silicon chips
     print("Using 'mps' (multi-process service) device")
     device = torch.device("mps")
 else:
@@ -241,7 +242,26 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(dataset_sequences)):
             optimizer.step()
             scheduler.step()
         avg_loss = total_loss / len(train_loader)
-        print(f"Epoch {epoch+1} Loss: {avg_loss:.4f}")
+        
+        # Evaluate on the validation set at the end of this epoch
+        model.eval()
+        all_preds = []
+        all_trues = []
+        with torch.no_grad():
+            for batch in val_loader:
+                input_ids = batch['input_ids'].to(device)
+                attention_mask = batch['attention_mask'].to(device)
+                labels_batch = batch['labels'].cpu().numpy()
+                
+                logits = model(input_ids=input_ids, attention_mask=attention_mask)
+                preds = torch.sigmoid(logits).cpu().numpy()  # get probabilities
+                all_preds.append(preds)
+                all_trues.append(labels_batch)
+        all_preds = np.vstack(all_preds)
+        all_trues = np.vstack(all_trues)
+        
+        epoch_acc, epoch_f1 = compute_metrics(all_trues, all_preds, threshold=0.5)
+        print(f"Epoch {epoch+1} Loss: {avg_loss:.4f}, Val Exact Match Acc: {epoch_acc:.4f}, Val Macro F1: {epoch_f1:.4f}")
     
     # Evaluation on validation set
     model.eval()
